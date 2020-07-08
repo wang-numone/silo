@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.dao.ZfInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.springboot.model.ZfInfo">
+    <result column="id" property="id" />
+    <result column="version" property="version" />
+        <result column="info" property="info" />
+        <result column="image" property="image" />
+        <result column="like_num" property="likeNum" />
+        <result column="create_at" property="createAt" />
+        <result column="update_at" property="updateAt" />
+        <result column="delete_at" property="deleteAt" />
+        <result column="browse" property="browse" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        version,
+        info, image, like_num, create_at, update_at, delete_at, browse
+    </sql>
+
+</mapper>
